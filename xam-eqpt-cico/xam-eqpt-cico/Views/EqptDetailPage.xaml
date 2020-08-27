@@ -10,7 +10,7 @@
         <ScrollView>
             <StackLayout Padding="5">
                 <Image Source="{Binding Path=Image}" Aspect="AspectFill" HeightRequest="200"/>
-                <Label Text="Equiptment Id:"
+                <Label Text="Equipment Id:"
                 VerticalOptions="Start" 
                 HorizontalOptions="Start" />
                 <Label Text="{Binding Equipment.Id}"

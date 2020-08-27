@@ -5,9 +5,9 @@ using System.Text;
 namespace xam_eqpt_cico.Models
 {
     /// <summary>
-    /// Base class for Equiptment History collections
+    /// Base class for Equipment History collections
     /// </summary>
-    public class EquiptmentHistory
+    public class EquipmentHistory
     {
         /// <summary>
         ///     The Id.

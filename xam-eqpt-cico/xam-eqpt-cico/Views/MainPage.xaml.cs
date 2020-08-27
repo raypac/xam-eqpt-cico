@@ -23,7 +23,7 @@ namespace xam_eqpt_cico.Views
 
             MasterBehavior = MasterBehavior.Popover;
 
-            MenuPages.Add((int)MenuItemType.Equiptment, (NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.Equipment, (NavigationPage)Detail);
         }
 
         public async Task NavigateFromMenu(int id)
@@ -32,14 +32,14 @@ namespace xam_eqpt_cico.Views
             {
                 switch (id)
                 {
-                    case (int)MenuItemType.Equiptment:
+                    case (int)MenuItemType.Equipment:
                         MenuPages.Add(id, new NavigationPage(new EqptListPage()));
                         break;
                     case (int)MenuItemType.CheckIn:
-                        MenuPages.Add(id, new NavigationPage(new EqptListPage((int)EquiptmentScanAction.CheckIn)));
+                        MenuPages.Add(id, new NavigationPage(new EqptListPage((int)EquipmentScanAction.CheckIn)));
                         break;
                     case (int)MenuItemType.CheckOut:
-                        MenuPages.Add(id, new NavigationPage(new EqptListPage((int)EquiptmentScanAction.CheckOut)));
+                        MenuPages.Add(id, new NavigationPage(new EqptListPage((int)EquipmentScanAction.CheckOut)));
                         break;
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));

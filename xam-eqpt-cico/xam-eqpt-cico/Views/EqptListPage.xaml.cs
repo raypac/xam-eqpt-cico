@@ -22,7 +22,7 @@ namespace xam_eqpt_cico.Views
         {
             InitializeComponent();
 
-            Title = "Equiptment List";
+            Title = "Equipment List";
 
             BindingContext = viewModel = new EqptListViewModel();
 
@@ -32,17 +32,17 @@ namespace xam_eqpt_cico.Views
         {
             InitializeComponent();
 
-            Title = "Equiptment List";
+            Title = "Equipment List";
 
             BindingContext = viewModel = new EqptListViewModel();
 
             switch (scanAction)
             {
-                case (int)EquiptmentScanAction.CheckIn:
-                    Task.Run(async () => { await Navigation.PushAsync(new EqptScanPage((int)EquiptmentScanAction.CheckIn)); });
+                case (int)EquipmentScanAction.CheckIn:
+                    Task.Run(async () => { await Navigation.PushAsync(new EqptScanPage((int)EquipmentScanAction.CheckIn)); });
                     break;
-                case (int)EquiptmentScanAction.CheckOut:
-                    Task.Run(async () => { await Navigation.PushAsync(new EqptScanPage((int)EquiptmentScanAction.CheckOut)); });
+                case (int)EquipmentScanAction.CheckOut:
+                    Task.Run(async () => { await Navigation.PushAsync(new EqptScanPage((int)EquipmentScanAction.CheckOut)); });
                     break;
             }
         }
@@ -56,7 +56,7 @@ namespace xam_eqpt_cico.Views
 
         private async void CheckInItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EqptScanPage((int)EquiptmentScanAction.CheckIn));
+            await Navigation.PushAsync(new EqptScanPage((int)EquipmentScanAction.CheckIn));
         }
 
         protected override void OnAppearing()

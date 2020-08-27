@@ -59,9 +59,9 @@ namespace xam_eqpt_cico.Models
         public string ImageObj { get; set; }
 
         /// <summary>
-        ///     The List of Equiptment History.
+        ///     The List of Equipment History.
         /// </summary>
-        public List<EquiptmentHistory> EquiptmentHistory { get; set; }
+        public List<EquipmentHistory> EquipmentHistory { get; set; }
 
         /// <summary>
         ///     The Text.
@@ -82,7 +82,7 @@ namespace xam_eqpt_cico.Models
             get
             {
                 var itemAvailable = IsInUse ? "Not Available" : "Available";
-                return $"Location: {Location}, Equiptment is {itemAvailable}";
+                return $"Location: {Location}, Equipment is {itemAvailable}";
             }
         }
     }

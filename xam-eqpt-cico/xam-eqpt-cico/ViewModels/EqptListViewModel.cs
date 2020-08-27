@@ -17,7 +17,7 @@ namespace xam_eqpt_cico.ViewModels
 
         public EqptListViewModel()
         {
-            Title = "Browse Equiptment";
+            Title = "Browse Equipment";
             Equipments = new ObservableCollection<Equipment>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }

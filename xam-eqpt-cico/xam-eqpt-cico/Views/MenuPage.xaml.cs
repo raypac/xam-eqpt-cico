@@ -20,7 +20,7 @@ namespace xam_eqpt_cico.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Equiptment, Title="Equiptment" },
+                new HomeMenuItem {Id = MenuItemType.Equipment, Title="Equipment" },
                 new HomeMenuItem {Id = MenuItemType.CheckIn, Title="Check-In" },
                 new HomeMenuItem {Id = MenuItemType.CheckOut, Title="Check-Out" },
                 new HomeMenuItem {Id = MenuItemType.About, Title="About" }

@@ -9,7 +9,7 @@ namespace xam_eqpt_cico.Utilities
         /// <summary>
         /// Add Booking StatusCode
         /// </summary>
-        public enum EquiptmentScanAction
+        public enum EquipmentScanAction
         {
             CheckIn = 1,
             CheckOut = 2

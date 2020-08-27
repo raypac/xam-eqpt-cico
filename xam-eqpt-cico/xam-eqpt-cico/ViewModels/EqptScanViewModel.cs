@@ -73,7 +73,7 @@ namespace xam_eqpt_cico.ViewModels
 
         #region Methods
 
-        public async Task CheckInEquiptmentAsync()
+        public async Task CheckInEquipmentAsync()
         {
             Qr = Result.Text;
             var equipment = await DataStore.GetItemAsync(Qr);
@@ -82,11 +82,11 @@ namespace xam_eqpt_cico.ViewModels
             {
                 switch (scanAction)
                 {
-                    case (int)EquiptmentScanAction.CheckIn:
+                    case (int)EquipmentScanAction.CheckIn:
                         equipment.IsInUse = false;
                         equipment.IsInUseWhere = "";
                         break;
-                    case (int)EquiptmentScanAction.CheckOut:
+                    case (int)EquipmentScanAction.CheckOut:
                         equipment.IsInUse = true;
                         equipment.IsInUseWhere = "Somewhere else..";
                         break;

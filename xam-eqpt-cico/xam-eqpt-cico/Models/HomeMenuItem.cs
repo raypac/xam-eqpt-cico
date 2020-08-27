@@ -6,7 +6,7 @@ namespace xam_eqpt_cico.Models
 {
     public enum MenuItemType
     {
-        Equiptment,
+        Equipment,
         CheckIn,
         CheckOut,
         About
