@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="xam_eqpt_cico.Views.EqptDetailPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5">
+                <Image Source="{Binding Path=Image}" Aspect="AspectFill" HeightRequest="200"/>
+                <Label Text="Equiptment Id:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Equipment.Id}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
+                <Label Text="Location:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Equipment.Location}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
+                <Label Text="Tooling Type:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Equipment.ToolingType}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
+                <Label Text="Asset Number:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Equipment.AssetNumber}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
+                <Label Text="Serial Number:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Equipment.SerialNumber}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
+                <Label Text="Tooling Name:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Equipment.ToolingName}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
+                <Label Text="IsDamaged:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Equipment.IsDamaged}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
+                <Label Text="Is In Use:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Label Text="{Binding Equipment.IsInUse}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

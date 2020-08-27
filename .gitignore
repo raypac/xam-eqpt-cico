@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/xam-eqpt-cico/.vs/xam-eqpt-cico/v16
+/xam-eqpt-cico/xam-eqpt-cico/bin
+/xam-eqpt-cico/xam-eqpt-cico/obj
+/xam-eqpt-cico/xam-eqpt-cico.Android/bin
+/xam-eqpt-cico/xam-eqpt-cico.Android/obj
